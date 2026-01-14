@@ -26,7 +26,6 @@ public class CounterView : MonoBehaviour
     private void OnDisable()
     {
         _counter.Changed -= Change;
-        Stop();
     }
 
     private void Change(float value)

@@ -12,6 +12,9 @@ public class ControlCounter : MonoBehaviour
     private void Update()
     {
         if (Input.GetMouseButtonDown(_valueButtonForPress))
+        {
+            Debug.Log("Нажатие");
             IsPressed?.Invoke();
+        }
     }
 }
